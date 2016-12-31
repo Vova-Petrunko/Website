@@ -1,0 +1,196 @@
+body{
+	font-size: 12px;
+	background: #fbfdfe no-repeat;
+}
+div.wrapper{
+	margin: 0 auto;
+	max-width: 95%;
+	background: url(../img/background.jpg) no-repeat fixed;
+}
+header{
+	margin: 40px 0;
+}
+
+.menu {
+	background-color: #fefefe;
+	border: 0;
+	box-shadow: 0 0 5px rgba(0,0,0, .19);
+	padding: 15px 0;
+}
+.navbar-brand {
+	padding-right: 80px;
+
+}
+.navbar-brand img{
+	position: relative;
+	top: -60px;
+	border-radius: 100px;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: #8d8c8c;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.navbar-nav > li > a:hover{
+	border-bottom: 1px solid #d42819;
+	color: #008d8c;
+}
+.menu .container{
+	position: relative;
+}
+
+.search{
+	font-size: 25px;
+	line-height: 50px;
+	position: absolute;
+	right: 40px;
+	cursor: pointer;
+	color: #8d8c8c;
+	display: none;
+}
+
+.slogan{
+	margin-bottom: 20px;
+}
+.slogan h1{
+	color: #dc3c3c;
+	text-align: center;
+}
+
+.row div.album{
+	background: rgba(255,255,200,0.3);
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.album-row{
+	margin-bottom:20px; 
+}
+.row a img{
+	box-shadow: 0 0 5px rgba(0,0,0, .19);
+}
+.row a:hover img{
+	box-shadow: 0 0 20px rgba(255,0,0, .70);
+}
+
+.info{
+	/* Make the picture and info go "on top" of each other */
+	top:50px;
+	position:absolute;
+	font-size: 14px;
+	left: 50px;
+	color: #eb9316;
+}
+.info {
+	/* Hide the info by default */
+	opacity:0;
+}
+
+#push .info {
+	transition: all 0.3s;
+	transition-delay:0.2s;
+}
+#push .pic {
+	transition: all 0.5s;
+}
+/* We fade in the info */
+#push div.album div:hover .info {
+	opacity:1;
+}
+/* We make the opacity lower, rotate and scale the picture */
+#push div.album div:hover .pic {
+	opacity:0.7;
+	transform: scale(0.7) rotate(10deg);
+}
+
+.row div.album h4{
+	padding-left: 10px;
+}
+#viewers{
+	font-size: 14px;
+	color: #f5e96b;
+	text-align: center;
+}
+footer{
+	margin-bottom: 10px;
+}
+footer hr{
+	border-color: #00e;
+}
+
+@media only screen and (max-width:1244px)
+{
+	.album img{
+		height: 220px;
+		width: 270px;
+	}
+	.row div.album{
+		width: 272px;
+	}
+}
+@media only screen and (max-width: 991px)
+{
+	.navbar-brand {
+	padding-right: 10px;
+	}
+	form.navbar-form{
+		display: none;
+		position: absolute;
+		right: 10px;
+		top: 40px;
+	}
+	form button.btn-default{
+		display: block;
+		margin: 5px auto;
+	}
+	.search{
+		display: block;
+	}
+	.row div.album{
+		margin:5px auto;
+	}
+	.album-row{
+	margin-bottom:0; 
+	}
+}
+
+@media only screen and (min-width: 992px){
+	form.navbar-form{
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.menu{
+		padding: 0;
+	}
+	.navbar-brand img{
+		max-height: 50px;
+		top: -15px;
+		border-radius: 100px;
+	}
+	.search{
+		display: none;
+	}
+	.navbar-nav > li > a:hover{
+		border-bottom:0;
+		color: #fff !important;
+		background: #d42819 !important;
+	}
+	form.navbar-form{
+		display: block !important;
+		position: relative;
+		margin: 0;
+		right: 0;
+		top: 0;
+		max-width: 150px;
+		border: 0
+	}
+	.row div.album{
+		margin:5px auto;
+	}
+	.album-row{
+	margin-bottom:0; 
+	}
+}
